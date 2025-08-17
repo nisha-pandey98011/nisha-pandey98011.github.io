@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Kumari - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        header, section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background-color: #FF69B4; /* Pink */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #FFF0F5; /* Light Pink */
+        }
+
+        .about h2 {
+            color: #FF69B4;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: #FFFFFF;
+            border: 1px solid #FFD1DC;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            color: #FF69B4;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #FFF0F5;
+        }
+
+        .contact h2 {
+            color: #FF69B4;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact label {
+            font-weight: 500;
+        }
+
+        .contact input, .contact textarea {
+            padding: 0.75rem;
+            border: 1px solid #FFD1DC;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .contact button {
+            background-color: #FF69B4;
+            color: #FFFFFF;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .contact button:hover {
+            background-color: #DB7093;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #FF69B4;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility Improvements */
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 2px solid #FF69B4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header class="hero">
+        <h1>Nisha Kumari</h1>
+        <p>Electronics & Communication Engineering Graduate (2025)</p>
+        <p>Motivated graduate from Govt. Engineering College, Kaimur, with strong skills in networking, cybersecurity, and Java-based development. CCNA certified and trained in Spring Boot. Seeking an entry-level role to apply technical knowledge and problem-solving skills.</p>
+    </header>
+
+    <!-- About Summary -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I am a recent B.Tech graduate in Electronics & Communication Engineering from Govt. Engineering College, Kaimur (2021–2025). My educational background includes Intermediate (Science) from Project Girls High School, Sanjhauli (2019–2021) and Matriculation from the same institution (2019).</p>
+        
+        <h3>Certifications & Training</h3>
+        <ul>
+            <li>CCNA Certified — Cisco Networking Academy, BIPARD Patna (Aug 2025)</li>
+            <li>Network Security — Cisco Networking Academy</li>
+            <li>Introduction to Cyber Security — Cisco Networking Academy</li>
+            <li>Java + Spring Boot — JSpiders, Old Airport Road Bengaluru</li>
+        </ul>
+        
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>Networking: CCNA, Network Security, Routing & Switching</li>
+            <li>Programming: Java, Spring Boot</li>
+            <li>Cybersecurity: Secure Communication, Threat Analysis</li>
+            <li>Tools: Cisco Packet Tracer, Eclipse, Git</li>
+            <li>Languages: Hindi (Intermediate), English (Intermediate), German (A1)</li>
+        </ul>
+        
+        <h3>Hobbies & Interests</h3>
+        <ul>
+            <li>Singing</li>
+            <li>Public Speaking</li>
+        </ul>
+    </section>
+
+    <!-- Project Grid -->
+    <section class="projects">
+        <h2>Academic Projects</h2>
+        <div class="project-card">
+            <h3>Passenger Safety System</h3>
+            <p>IoT-based monitoring for passenger safety in vehicles.</p>
+        </div>
+        <div class="project-card">
+            <h3>Secure Group Chatting App</h3>
+            <p>Encrypted messaging platform ensuring data privacy.</p>
+        </div>
+        <div class="project-card">
+            <h3>Wi-Fi Talking Robot</h3>
+            <p>Voice-enabled robot controllable via Wi-Fi.</p>
+        </div>
+        <div class="project-card">
+            <h3>SOHO (Small Office / Home Office) Network Project</h3>
+            <p>Network setup for small office or home environments.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post" aria-labelledby="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <div class="contact-info">
+            <p>Contact: 8102387697 | Email: nisha.pandey98011@gmail.com | Address: Patna, Bihar</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/nisha-pandey-0a1378231" target="_blank">linkedin.com/in/nisha-pandey-0a1378231</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
+```
